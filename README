@@ -1,0 +1,19 @@
+environment:
+-python 3.7
+-pytorch 1.12.1
+
+config:
+cd cpp_wrappers
+sh compile_wrappers.sh
+
+run:
+python train.py
+python test.py
+#for one GPU
+
+python train2.py
+python test2.py
+python option_select.py
+#for multi-GPU
+
+
